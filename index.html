@@ -1,88 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NutriSnap AI — Privacy Policy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NutriSnap AI - Privacy Policy</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #333; background: #fafafa; line-height: 1.7; }
-  .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; background: #fff; min-height: 100vh; }
-  h1 { color: #00838F; font-size: 28px; text-align: center; margin-bottom: 4px; }
-  .subtitle { text-align: center; color: #777; font-size: 14px; margin-bottom: 6px; }
-  .date { text-align: center; color: #999; font-size: 13px; font-style: italic; margin-bottom: 36px; }
-  h2 { color: #00838F; font-size: 18px; margin: 32px 0 12px; }
-  p { margin-bottom: 12px; font-size: 15px; }
-  b { color: #222; }
-  .footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 60px; padding-top: 20px; border-top: 1px solid #eee; }
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; color: #1a1a2e; line-height: 1.6; background: #fff; }
+  h1 { font-size: 1.7rem; margin-bottom: 4px; }
+  h2 { font-size: 1.2rem; margin-top: 28px; }
+  .muted { color: #666; font-size: 0.9rem; }
+  ul { padding-left: 20px; }
+  a { color: #00838f; }
 </style>
 </head>
 <body>
-<div class="container">
-<h1>Privacy Policy</h1>
-<p class="subtitle">NutriSnap AI — AI-Powered Nutrition Assistant</p>
-<p class="date">Last updated: March 17, 2026</p>
+<h1>NutriSnap AI - Privacy Policy</h1>
+<p class="muted">Effective date: October 4, 2026</p>
 
-<p>This Privacy Policy describes how Codelantern ("we", "us", or "our") collects, uses, and protects your information when you use the NutriSnap AI mobile application ("the App"). By using the App, you agree to the collection and use of information in accordance with this policy.</p>
+<p>This policy explains what information the NutriSnap AI Android app ("NutriSnap", "the app") uses, why, and what choices you have. NutriSnap has no ads and does not sell your data.</p>
 
-<h2>1. Information We Collect</h2>
-<p><b>1.1 Information You Provide</b> — When you set up your profile, you may provide personal details such as your name, age, gender, height, weight, activity level, and country. This information is used solely to calculate your personalized daily calorie and nutrition targets.</p>
-<p><b>1.2 Food Photos</b> — When you use the camera or gallery feature to analyze food, your photos are sent to our AI service for nutritional analysis. Photos are processed in real-time and are not stored on our servers after analysis is complete.</p>
-<p><b>1.3 Nutrition Data</b> — The App stores your meal history, nutrition tracking data, water intake records, and AI-generated advice reports locally on your device.</p>
-<p><b>1.4 Usage Data</b> — We may collect anonymized usage statistics such as feature usage frequency and error reports to improve the App. This data does not identify you personally.</p>
+<h2>1. No account, data stays on your phone</h2>
+<p>NutriSnap works without an account. Your profile (such as name if you choose to enter one, sex, birth year, height, weight, goal and habits), meal history, weight log, water log, advice history and settings are stored only on your device. They are not uploaded to our server for storage.</p>
+<p>Meal records and advice reports older than 60 days are deleted automatically from your device. Uninstalling the app or clearing its data deletes everything stored on your device.</p>
 
-<h2>2. How We Use Your Information</h2>
-<p>We use the information we collect for the following purposes:</p>
-<p>— To provide AI-powered food recognition and nutritional analysis<br>
-— To calculate personalized daily calorie and hydration targets<br>
-— To generate personalized nutrition advice based on your daily intake<br>
-— To display your meal history, statistics, and progress<br>
-— To improve the accuracy and quality of our service</p>
-<p>We do not use your data for advertising, marketing, or any purpose unrelated to the core functionality of the App.</p>
+<h2>2. Data sent at the moment of a request</h2>
+<p>Some features need artificial intelligence. When you use them, only the data needed for that request is sent through our server to Google's Gemini API, and the response is returned to your device:</p>
+<ul>
+  <li><strong>Photo analysis:</strong> the food photo you take or choose (resized and compressed).</li>
+  <li><strong>Nutrition advice:</strong> the name you entered (if any), that day's foods, calorie and macro totals, water intake, country, goal and your answer to "What's your biggest challenge?".</li>
+  <li><strong>Editing or adding a food:</strong> the food name and portion.</li>
+  <li><strong>Writing help in feedback:</strong> the text you ask to correct.</li>
+</ul>
+<p>Our server does not store your photos, food lists or advice text. They are passed to Google's Gemini API to generate the result and are not saved by us; Google processes them under its API terms.</p>
 
-<h2>3. Data Storage and Security</h2>
-<p><b>3.1 Local Storage</b> — All personal data, including your profile, meal history, nutrition records, and preferences, is stored locally on your device. We do not maintain a centralized database of user data.</p>
-<p><b>3.2 Data Retention</b> — Your food history and advice reports are retained on your device for 60 days. Older data is automatically removed to maintain App performance. You can manually clear all data at any time through your device settings.</p>
-<p><b>3.3 Security</b> — We implement industry-standard security measures to protect your data during transmission to our AI analysis service. All API communications use encrypted HTTPS connections.</p>
+<h2>3. Device identifier &amp; usage limits</h2>
+<p>To apply daily usage limits and the free trial fairly, the app sends two technical identifiers with requests:</p>
+<ul>
+  <li><strong>Random device identifier:</strong> created by the app the first time you use a feature that needs our server. It is a random value, not your name, email, phone number or Google account, and it is not derived from your device. On our server it is used only to count your requests per day.</li>
+  <li><strong>Installation key:</strong> a one-way hash (SHA-256) of your device's Android ID combined with an app-specific value. The original Android ID cannot be recovered from it. It is used only to count how many free trial photo analyses have been used, so the free trial does not restart when the app is reinstalled.</li>
+</ul>
+<p>We store the random device identifier with a daily request count, and the installation key with the number of free trial analyses used. These records contain no photos, food data or personal details.</p>
+<p>Your IP address is used only to apply request limits. It is kept briefly in server memory and is not written to our database. Like most hosted services, our cloud provider's request logs may record IP addresses for a limited period for security and operations.</p>
 
-<h2>4. Third-Party Services</h2>
-<p>The App uses third-party AI services to analyze food photos and provide nutritional information. When you submit a photo for analysis, the image is transmitted securely to our AI processing service. These services process the data in real-time and do not retain your photos or personal information.</p>
-<p>The App uses Google Play for subscription management and payment processing. Payment information is handled entirely by Google and is subject to Google's Privacy Policy.</p>
-<p>We do not sell, trade, or transfer your personal information to any third party for marketing or advertising purposes.</p>
+<h2>4. Purchases</h2>
+<p>NutriSnap Pro subscriptions are processed by Google Play. We do not receive or store your payment details. The app checks with Google Play whether you have an active subscription.</p>
 
-<h2>5. Camera and Storage Permissions</h2>
-<p>The App requests the following device permissions:</p>
-<p><b>Camera</b> — Required to take photos of food for AI analysis. The camera is used exclusively for food recognition purposes.</p>
-<p><b>Storage/Gallery</b> — Required to allow you to select existing photos from your gallery for analysis.</p>
-<p>These permissions are used solely for the stated purposes and can be revoked at any time through your device settings.</p>
+<h2>5. Feedback</h2>
+<p>If you send feedback, it is sent from your own email app to our support address. We use it only to answer you and improve the app.</p>
 
-<h2>6. Dietary Filtering</h2>
-<p>NutriSnap AI includes an automatic dietary filtering system that detects and excludes certain food categories (including alcohol and pork-based products) during analysis. This filtering operates locally within the App and does not transmit dietary preference data to any external service.</p>
+<h2>6. What we do not do</h2>
+<ul>
+  <li>No ads and no advertising identifiers.</li>
+  <li>No selling or sharing of your data for marketing.</li>
+  <li>No location tracking, contacts or account creation.</li>
+</ul>
 
-<h2>7. Children's Privacy</h2>
-<p>The App is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can take appropriate action.</p>
+<h2>7. Health information</h2>
+<p>NutriSnap provides general nutrition information and estimates. It is not medical advice. Please consult your doctor before making significant changes to your diet, especially if you are under 18, pregnant or have a health condition.</p>
 
-<h2>8. Subscription and Payments</h2>
-<p>NutriSnap AI offers optional premium subscriptions managed through Google Play. All payment processing is handled by Google. We do not collect, store, or have access to your payment card details or financial information. Subscription management, billing, and cancellation are governed by Google Play's terms and policies.</p>
+<h2>8. Children</h2>
+<p>NutriSnap is not directed to children under 13. Users under 18 should use the app with the involvement of a parent or guardian.</p>
 
-<h2>9. Your Rights</h2>
-<p>You have the right to:</p>
-<p>— Access all your data directly within the App (Profile, History, Statistics)<br>
-— Delete all your data by clearing the App storage through device settings<br>
-— Revoke camera and storage permissions at any time<br>
-— Cancel your subscription through Google Play at any time<br>
-— Contact us with questions or concerns about your privacy</p>
+<h2>9. Your choices</h2>
+<ul>
+  <li>You can use the app without entering your name.</li>
+  <li>You can delete your data at any time by clearing the app's data or uninstalling it.</li>
+  <li>To ask about the usage counts linked to your identifiers, contact us at the address below.</li>
+</ul>
 
-<h2>10. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. Any changes will be reflected in the "Last updated" date at the top of this document. We encourage you to review this Privacy Policy periodically. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+<h2>10. Changes</h2>
+<p>We may update this policy. The effective date above shows the latest version.</p>
 
-<h2>11. Contact Us</h2>
-<p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:</p>
-<p><b>Email:</b> codelanternapp@gmail.com<br>
-<b>Developer:</b> Codelantern<br>
-<b>App:</b> NutriSnap AI</p>
+<h2>11. Contact</h2>
+<p>Email: <a href="mailto:foodlenspro@gmail.com">foodlenspro@gmail.com</a></p>
 
-<div class="footer">© 2026 Codelantern. All rights reserved.</div>
-</div>
+<p class="muted"><a href="terms.html">Terms of Use</a></p>
 </body>
 </html>
